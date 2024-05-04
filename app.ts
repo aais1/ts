@@ -18,12 +18,14 @@ const person:{
     name:string;
     age:number;
     color:string;
-    hobbies:string[]
+    hobbies:string[];
+    role:[number , string];
 }={
     name:"Ali",
     age:18,
     color:"white",
-    hobbies:["gaming","movies","running"]
+    hobbies:["gaming","movies","running"],
+    role:[1,'admin']
 }
 
 for(const hobby of person.hobbies){

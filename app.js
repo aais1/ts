@@ -11,7 +11,8 @@ var person = {
     name: "Ali",
     age: 18,
     color: "white",
-    hobbies: ["gaming", "movies", "running"]
+    hobbies: ["gaming", "movies", "running"],
+    role: [1, 'admin']
 };
 for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
     var hobby = _a[_i];
