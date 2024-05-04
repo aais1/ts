@@ -14,18 +14,24 @@
 // fullname("Ali","Aais");
 
 
+enum Role{
+    ADMIN,
+    READ_ONLY,
+    AUTHOR
+}
+
 const person:{
     name:string;
     age:number;
     color:string;
     hobbies:string[];
-    role:[number , string];
+    role:Role;
 }={
     name:"Ali",
     age:18,
     color:"white",
     hobbies:["gaming","movies","running"],
-    role:[1,'admin']
+    role:Role.ADMIN
 }
 
 for(const hobby of person.hobbies){
