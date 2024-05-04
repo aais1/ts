@@ -18,10 +18,14 @@ const person:{
     name:string;
     age:number;
     color:string;
+    hobbies:string[]
 }={
     name:"Ali",
     age:18,
-    color:"white"
+    color:"white",
+    hobbies:["gaming","movies","running"]
 }
 
-console.log(person.color);
+for(const hobby of person.hobbies){
+    console.log(hobby.toUpperCase());
+}

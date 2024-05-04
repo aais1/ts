@@ -10,6 +10,10 @@
 var person = {
     name: "Ali",
     age: 18,
-    color: "white"
+    color: "white",
+    hobbies: ["gaming", "movies", "running"]
 };
-console.log(person.color);
+for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
+    var hobby = _a[_i];
+    console.log(hobby.toUpperCase());
+}
