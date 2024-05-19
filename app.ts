@@ -13,6 +13,14 @@
 
 // fullname("Ali","Aais");
 
+type Person={
+    name:string;
+    age:number;
+    color:string;
+    hobbies:string[];
+    role:Role;
+}
+
 
 enum Role{
     ADMIN,
@@ -20,13 +28,7 @@ enum Role{
     AUTHOR
 }
 
-const person:{
-    name:string;
-    age:number;
-    color:string;
-    hobbies:string[];
-    role:Role;
-}={
+const person:Person={
     name:"Ali",
     age:18,
     color:"white",
@@ -37,3 +39,15 @@ const person:{
 for(const hobby of person.hobbies){
     console.log(hobby.toUpperCase());
 }
+
+
+
+function add (a:number,b:number):number {
+    //console.log(a+b);not returning a number so this this will give error
+    return a+b;
+}
+
+
+console.log(add(1,2));
+
+//console.log(add('1','2')); this will give error because we have defined the type of a and b as number
